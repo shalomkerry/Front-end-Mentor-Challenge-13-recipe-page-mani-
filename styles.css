@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background:#f3e6d8;
+    font-family:'Young Serif', sans-serif;
+}
+body,h1,h2,h3,p,h4,ul,ol,table{
+    margin:0;
+    padding:0;
+}
+.card-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.style{
+    padding:0 40px;
+    background:#ffff;
+    border-radius:1.5rem;
+    gap:10px;
+    
+}
+.card{
+    width:735px;
+    height:auto;
+}
+img{
+    width:100%;
+    border-radius:1.5rem;
+}
+.gap{
+    padding-top:20px;
+    
+}
+.border{
+    border-bottom:#f3e6d8 1px solid;
+}
+.prepation{
+    background:#FFF7FC;
+    margin-top:10px;
+    border-radius: 10px;
+    border:none;
+}
+/* styling */
+p, li,td{
+    font-family:'Outfit',sans-serif;
+    color:#5f574e;
+    font-size:16px;
+}
+h1{
+    color:#302d2c;
+    padding:10px 0;
+    font-size:32px;
+}
+.heading_style{
+    color:#854632;
+}
+.prepation h4,.prepation li::marker{
+    color:#7b284f;
+}
+.prepation{
+    padding-left:20px;
+    padding-top: 10px;
+    padding-bottom:20px;
+    margin-top:20px;
+}
+.prepation h4{
+    padding:10px 0;
+    font-family:'Outfit',sans-serif;
+}
+li::marker,.nutrition__value{
+    color:#854632;
+}
+.ingredients__list{
+    padding-bottom:30px;
+    padding-top:15px;
+}
+.emphasis{
+    font-weight:600;
+}
+ul,
+ol {
+	padding-left: 1.5rem;
+    list-style-position: inline;
+}
+.instruction__list{
+    padding-bottom:30px;
+    padding-top:15px;
+}
+.nutrition__text{
+    margin:15px 0;
+}
+table{
+    width:100%;
+    padding-right:55px;
+    border-collapse: collapse;
+    text-align:left;
+    margin-bottom:25px;
+}
+td{
+    padding-bottom:10px;
+    padding-left:40px;
+}
+:is(ul, ol) li {
+	margin-bottom: 0.65rem;
+	padding-left: 1rem;
+}
+:is(ul,ol) ::marker{
+    font-weight:700;
+}
+table tr:not(:last-of-type){
+    border-bottom:1px solid #e4ded8;
+}
+.nutrition__value{
+    font-weight: 700;
+}
+@media (max-width:500px){
+    .card{
+        top:40%;
+        width:90%;
+    }
+    h1{
+        line-height:normal;
+        font-size:28px;
+    }
+}
